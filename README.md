@@ -2,8 +2,7 @@ Temperature and humidity sensor
 
 Based on ESP32 and DHT11
 
-DHT11 - 3.3V 4.7 k
-Sensor is connected to pin 5.
+DHT11 sensor is connected to pin 5.
 
 Availible custom RPC via mDash:
 
