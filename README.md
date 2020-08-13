@@ -29,8 +29,8 @@ Example response:
 
 Onboard Led:
 You can turn on/off onboard led and check status of it.
-Led.On: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.On?access_token=
-Led.Off: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Off?access_token=
+Led.On: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.On?access_token= \n
+Led.Off: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Off?access_token= \n
 Led.Read: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Read?access_token=
 
 Returns status of led.
