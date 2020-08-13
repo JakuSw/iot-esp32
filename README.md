@@ -8,6 +8,7 @@ Sensor is connected to pin 5.
 Availible custom RPC via mDash:
 
 Humidity sensor:
+
 Humid.Read: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Humid.Read?access_token=TOKEN
 
 Returns humidity value form 0 to 100. This is % value.
@@ -18,6 +19,7 @@ Example response:
 }
 
 Tepmerature sensor:
+
 Temp.Read: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Temp.Read?access_token=
 
 Returns temperature. Sensor range from -20 Celsius to + 60 Celsius. 
@@ -29,8 +31,11 @@ Example response:
 
 Onboard Led:
 You can turn on/off onboard led and check status of it.
-Led.On: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.On?access_token= \n
-Led.Off: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Off?access_token= \n
+
+Led.On: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.On?access_token= 
+
+Led.Off: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Off?access_token= 
+
 Led.Read: https://mdash.net/api/v2/devices/DEVICE_ID/rpc/Led.Read?access_token=
 
 Returns status of led.
