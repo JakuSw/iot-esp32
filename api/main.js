@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const cors = require('cors');
 const {device, token} = require('./config');
-
 const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/gettemp', function(req, res){
