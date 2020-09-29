@@ -1,0 +1,8 @@
+.App{
+  font-family: sans-serif;
+  color: #160F29;
+}
+.App > hr {
+  color: black;
+  margin-top: -20px;
+}
