@@ -49,4 +49,14 @@ app.get('/setledoff', function(req, res){
     });
 });
 
+app.get('/readled', function(req, res){
+  axios.get(`https://mdash.net/api/v2/devices/${device}/rpc/Led.Read?access_token=${token}`)
+  .then(function (response) {
+      res.send(response.data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+});
+
 app.listen(4000);

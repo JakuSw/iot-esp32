@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import {Button, Paper, Typography} from "@material-ui/core"
-
+import {Button, Typography} from "@material-ui/core"
+import "../styles/SensorChecker.css"
 
 class SensorChecker extends React.Component{
     constructor(props){
@@ -81,34 +81,39 @@ class SensorChecker extends React.Component{
         const {temperature, humidity, led} = this.state;
 
         return(
-            <div>
-            <Paper elevation={3} color="inherit">
-                <Typography variant="subtitle2">Temperature: {temperature} 
+            <div className="SensorChecker">
+                <div className="SensorChecker__parameter">
+                    <Typography variant="h6">Temperature: {temperature}</Typography>
                     <Button  
                         color="primary" 
                         variant="contained" 
                         onClick = {this.updateTemp.bind(this)}>
                         Update
                     </Button>
-                </Typography><br/>
-                <Typography variant="subtitle2">Humidity: {humidity} 
+                </div>
+
+                <div className="SensorChecker__parameter">
+                    <Typography variant="h6">Humidity: {humidity} 
+                    </Typography>
                     <Button 
                         color="primary" 
                         variant="contained" 
                         onClick = {this.updateHumid.bind(this)}>
-                        Update</Button>
-                </Typography><br/>
+                        Update
+                    </Button>
+                </div>
 
-                <Typography variant="subtitle2">Led: {led} 
+                <div className="SensorChecker__parameter">
+                    <Typography variant="h6">Led: {led} 
+                    </Typography>
                     <Button
                         color="primary" 
                         variant="contained" 
                         onClick = {this.switchLed.bind(this)}>
                         Switch
                     </Button>
-                </Typography><br/>
+                </div>
                 
-            </Paper>
             </div>
         )
     }

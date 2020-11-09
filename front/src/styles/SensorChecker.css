@@ -1,0 +1,12 @@
+.SensorChecker{
+    background-color: #3f51b5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flexbox;
+}
+
+.SensorChecker__parameter{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
